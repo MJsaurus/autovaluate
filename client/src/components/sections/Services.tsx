@@ -15,14 +15,14 @@ const services = [
     icon: Car,
     title: "Loss of Use Reports",
     description: "Compensation for the time you were without your vehicle. Get paid for the daily rental rate of a comparable luxury vehicle.",
-    features: ["Daily Rate Analysis", "Duration Verification", "Case Law Support"],
+    features: ["Daily Rate Analysis", "Duration Verification", "Comparable Rate Data"],
     color: "text-primary",
   },
   {
     icon: FileText,
     title: "Vehicle Valuation",
-    description: "Independent market analysis for total loss settlements, divorce, estate, or high-value asset appraisals.",
-    features: ["Total Loss Negotiation", "Fair Market Value", "Collector Cars"],
+    description: "Independent market analysis for total loss settlements, pre-purchase evaluations, and fair market pricing. We provide the transparency you need to buy or settle with confidence.",
+    features: ["Total Loss & Insurance", "Pre-Purchase Analysis", "Comparable Sales Data"],
     color: "text-primary",
   },
   {
