@@ -1,0 +1,122 @@
+You are a senior full-stack web developer building a professional services website.
+
+Build a modern, mobile-first website for an automotive claims and valuation services company that provides:
+
+Diminished Value (DV) reports
+
+Loss of Use (LOU) reports
+
+Vehicle valuation and market analysis
+
+Public adjusting services (first-party insurance claims only, where legally permitted)
+
+Purpose of the website:
+
+Educate consumers on DV and LOU
+
+Explain the difference between reports, valuations, and public adjusting
+
+Generate inbound leads for report preparation and consulting
+
+Establish credibility based on automotive industry experience
+
+IMPORTANT LEGAL / COMPLIANCE REQUIREMENTS:
+
+Do NOT present services as legal advice
+
+Do NOT claim to represent clients in third-party liability claims
+
+Use advisory, analytical, and documentation-support language
+
+Clearly distinguish between:
+• Informational DV/LOU reports
+• Vehicle valuation services
+• Public adjusting services (subject to licensing and jurisdiction)
+
+Include clear disclaimers throughout the site
+
+Pages / sections to include:
+
+Hero Section
+
+Headline focused on DV, LOU, and vehicle valuation clarity
+
+Subheadline emphasizing independent analysis and documentation support
+
+Services Section (separate cards)
+
+Diminished Value Reports
+
+Loss of Use Reports
+
+Vehicle Valuation & Market Analysis
+
+Public Adjusting Services (first-party claims only)
+
+How It Works
+
+Step-by-step explanation of requesting a report or consultation
+
+Why Choose Us
+
+Automotive industry experience
+
+Data-driven methodology
+
+Independent, unbiased analysis
+
+FAQ
+
+What is DV?
+
+What is LOU?
+
+Is this legal advice? (answer clearly: no)
+
+Do you negotiate with insurers? (answer carefully)
+
+Contact / Intake Form
+
+Name
+
+Email
+
+Vehicle info
+
+Type of service requested
+
+Footer
+
+Licensing disclosures
+
+Jurisdiction disclaimer
+
+“Not legal advice” and “not a law firm” language
+
+Design requirements:
+
+Dark, professional, premium automotive aesthetic
+
+Clean typography
+
+No gimmicks or flashy animations
+
+Trust-focused layout
+
+Technical requirements:
+
+HTML, CSS, vanilla JavaScript
+
+Responsive design
+
+Clean file structure
+
+Commented code
+
+Output:
+
+Generate all necessary files
+
+Include placeholder copy that can be edited easily
+
+Briefly explain how to modify content and add pages later
