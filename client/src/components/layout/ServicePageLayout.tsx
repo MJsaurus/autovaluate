@@ -89,7 +89,7 @@ export function ServicePageLayout({
               )}
 
               <div className="p-4 bg-white/5 border border-white/10 rounded-lg text-xs text-muted-foreground italic">
-                {disclaimer || "Disclaimer: AutoValuate is a professional valuation firm, not a law firm. This service provides data-driven documentation and does not constitute legal advice."}
+                {disclaimer || "Disclaimer: AutoSignal Group is a professional valuation firm, not a law firm. This service provides data-driven documentation and does not constitute legal advice."}
               </div>
             </div>
 
