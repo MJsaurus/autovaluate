@@ -33,7 +33,7 @@ export default function Hero() {
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-extrabold leading-tight text-white">
             Maximize Your <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-400 to-slate-200">
               Claim Value
             </span>
           </h1>
