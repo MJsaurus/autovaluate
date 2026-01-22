@@ -1,0 +1,123 @@
+Convert the existing one-page website into a multi-page site while preserving the current visual design (dark theme, typography, spacing, components) and keeping the homepage layout largely intact.
+
+Goals
+
+Create separate pages for each service with space for detailed content
+
+Add real pricing in a clear, professional way
+
+Keep navigation consistent across all pages
+
+Maintain compliance: no legal advice, no “guaranteed recovery,” no “we represent you in third-party claims”
+
+Required pages (routes)
+
+/ Home (keep most existing sections, but shorten “Services” cards to summaries + “Learn more” links)
+
+/services/diminished-value (DV Reports)
+
+/services/loss-of-use (LOU Reports)
+
+/services/bundle (DV + LOU Bundle)
+
+/services/pre-purchase (Pre-Purchase Market Report)
+
+/services/public-adjusting (Public Adjusting)
+
+/pricing (full pricing table + FAQs)
+
+/contact (intake form)
+
+Pricing (use these exact prices)
+
+DV Report: $299
+
+LOU Report: $299
+
+DV + LOU Bundle: $499
+
+Pre-Purchase Market Report: $249
+
+Public Adjuster fee (Texas): 10% of the total recovery (maximum allowed in Texas)
+
+Where to display pricing
+
+Add a prominent Pricing section on the Home page (a preview that links to /pricing)
+
+Add the full pricing table on /pricing
+
+On each service page, show a small “Price” card near the top with that service’s price and a CTA button (“Start Intake” or “Request Consultation”)
+
+Content requirements per service page
+
+Each service page must include:
+
+Hero (service name + 1–2 sentence value proposition)
+
+“What you get” (bullet list)
+
+“How it works” (3–5 steps)
+
+“What we need from you” (documents/data list)
+
+FAQ (service-specific)
+
+A clear disclaimer: “Not legal advice. Not a law firm.”
+
+Important copy constraints:
+
+Avoid terms like “guarantee,” “recover,” “representation,” “we’ll get you paid,” or “case law support.”
+
+DV/LOU pages should be framed as data-driven valuation/documentation reports.
+
+Public Adjusting page must be clearly separated and must state:
+
+“First-party claims only (where permitted)”
+
+“Subject to licensing and jurisdiction”
+
+Fee: “10% of the total recovery (Texas maximum)”
+
+Navigation changes
+
+Replace the one-page anchor nav with standard links:
+
+Home
+
+Services (dropdown with the 5 service pages)
+
+Pricing
+
+FAQ (can remain on Home, plus optional FAQ page later)
+
+Contact
+
+Keep a top-right CTA button: “Get a Free Consultation” linking to /contact
+
+Technical requirements
+
+Keep it simple and stable: use static HTML pages with shared header/footer via a simple templating approach OR a lightweight router (your choice).
+
+Use a clean folder structure:
+
+/index.html
+
+/pricing/index.html
+
+/contact/index.html
+
+/services/diminished-value/index.html etc.
+
+Put shared styles in one CSS file (e.g., /assets/styles.css)
+
+Ensure all pages are mobile responsive.
+
+Output
+
+Generate/modify all necessary files
+
+Update all internal links
+
+Confirm the navigation works across all pages
+
+Keep the design consistent with the existing site

@@ -1,6 +1,7 @@
 import Navbar from "@/components/layout/Navbar";
 import Hero from "@/components/sections/Hero";
-import Services from "@/components/sections/Services";
+import ServicesSummary from "@/components/sections/ServicesSummary";
+import PricingSection from "@/components/sections/PricingSection";
 import HowItWorks from "@/components/sections/HowItWorks";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import FAQ from "@/components/sections/FAQ";
@@ -13,7 +14,8 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <Services />
+        <ServicesSummary />
+        <PricingSection />
         <HowItWorks />
         <WhyChooseUs />
         <FAQ />
