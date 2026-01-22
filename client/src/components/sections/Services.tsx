@@ -9,21 +9,21 @@ const services = [
     title: "Diminished Value Reports",
     description: "Recover the lost market value of your vehicle after an accident. Even with perfect repairs, your car is worth less. We prove it.",
     features: ["Market Analysis", "Repair Quality Assessment", "USPAP Compliant"],
-    color: "text-slate-400",
+    color: "text-primary",
   },
   {
     icon: Car,
     title: "Loss of Use Reports",
     description: "Compensation for the time you were without your vehicle. Get paid for the daily rental rate of a comparable luxury vehicle.",
     features: ["Daily Rate Analysis", "Duration Verification", "Case Law Support"],
-    color: "text-slate-400",
+    color: "text-primary",
   },
   {
     icon: FileText,
     title: "Vehicle Valuation",
     description: "Independent market analysis for total loss settlements, divorce, estate, or high-value asset appraisals.",
     features: ["Total Loss Negotiation", "Fair Market Value", "Collector Cars"],
-    color: "text-slate-400",
+    color: "text-primary",
   },
   {
     icon: Scale,
@@ -31,7 +31,7 @@ const services = [
     description: "Licensed representation for first-party insurance claims. We handle the negotiation so you don't have to.",
     features: ["First-Party Claims Only", "Negotiation Support", "Policy Review"],
     disclaimer: "*Subject to jurisdiction & licensing",
-    color: "text-slate-400",
+    color: "text-primary",
   },
 ];
 

@@ -60,7 +60,7 @@
   --popover: 220 13% 13%;
   --popover-foreground: 210 20% 98%;
 
-  --primary: 215 45% 45%; /* Professional Steel Blue - Desaturated & Authoritative */
+  --primary: 210 100% 50%; /* Original Electric Blue */
   --primary-foreground: 210 40% 98%;
 
   --secondary: 215 15% 20%; /* Dark Metallic Grey */
@@ -69,23 +69,23 @@
   --muted: 215 15% 20%;
   --muted-foreground: 215 20% 65%;
 
-  --accent: 215 45% 45%; /* Match primary for consistency */
+  --accent: 210 100% 50%; /* Electric Blue Accent */
   --accent-foreground: 210 40% 98%;
 
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 210 20% 98%;
 
-  --border: 215 12% 22%;
-  --input: 215 12% 22%;
-  --ring: 215 45% 45%;
+  --border: 215 15% 25%;
+  --input: 215 15% 25%;
+  --ring: 210 100% 50%;
 
-  --tertiary: 215 8% 60%; /* Subtle Graphite/Silver Secondary Accent */
+  --icon: 210 100% 50%; /* Uniform icon color: Electric Blue */
 
-  --chart-1: 215 45% 45%;
-  --chart-2: 160 30% 45%;
-  --chart-3: 30 40% 55%;
-  --chart-4: 280 35% 60%;
-  --chart-5: 340 45% 55%;
+  --chart-1: 210 100% 50%;
+  --chart-2: 160 60% 45%;
+  --chart-3: 30 80% 55%;
+  --chart-4: 280 65% 60%;
+  --chart-5: 340 75% 55%;
 }
 
 @layer base {
@@ -103,21 +103,21 @@
 /* Custom Utilities for Premium Feel */
 @layer utilities {
   .glass-card {
-    background: rgba(25, 30, 40, 0.75);
+    background: rgba(30, 35, 45, 0.7);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
   }
   
   .text-gradient-silver {
-    background: linear-gradient(to bottom right, #ffffff, #94a3b8);
+    background: linear-gradient(to bottom right, #ffffff, #a1a1aa);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
   }
   
   .text-gradient-blue {
-    background: linear-gradient(to right, #64748b, #94a3b8); /* Steel blue gradient */
+    background: linear-gradient(to right, #3b82f6, #60a5fa);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
