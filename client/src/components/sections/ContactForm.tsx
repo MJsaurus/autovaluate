@@ -54,7 +54,7 @@ export default function ContactForm() {
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-background/90 pointer-events-none z-10" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[120px] pointer-events-none" />
 
-      <div className="container relative z-20 px-4 md:px-6">
+      <div className="container mx-auto relative z-20 px-4 md:px-6">
         <div className="grid lg:grid-cols-2 gap-16">
           <div className="space-y-8">
             <h2 className="text-3xl md:text-5xl font-heading font-bold text-white">

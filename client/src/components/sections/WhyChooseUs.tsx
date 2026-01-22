@@ -3,7 +3,7 @@ import { Shield, Award, Users, Search } from "lucide-react";
 export default function WhyChooseUs() {
   return (
     <section id="why-us" className="py-24 bg-background">
-      <div className="container px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-5xl font-heading font-bold text-white mb-6">
             Industry Authority & <span className="text-primary">Expertise</span>

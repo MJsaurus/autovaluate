@@ -26,7 +26,7 @@ const steps = [
 export default function HowItWorks() {
   return (
     <section id="process" className="py-24 bg-card/30 border-y border-white/5">
-      <div className="container px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-white leading-tight">

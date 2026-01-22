@@ -2,8 +2,8 @@ import { ShieldCheck } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-background border-t border-white/5 pt-16 pb-8">
-      <div className="container px-4 md:px-6">
+    <footer className="bg-background border-t border-white/5 pt-16 pb-8 flex justify-center">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-1 space-y-4">
             <div className="flex items-center gap-2">

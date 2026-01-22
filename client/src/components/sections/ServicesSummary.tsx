@@ -39,7 +39,7 @@ export default function ServicesSummary() {
         style={{ backgroundImage: `url(${textureBg})`, backgroundSize: 'cover' }}
       />
       
-      <div className="container px-4 md:px-6 relative z-10">
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <h2 className="text-3xl md:text-5xl font-heading font-bold text-white">
             Expert <span className="text-primary">Automotive Services</span>
