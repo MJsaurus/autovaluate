@@ -80,7 +80,7 @@ export default function Navbar() {
             <a className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors uppercase tracking-wide" data-testid="link-contact">Contact</a>
           </Link>
           
-          <Button asChild className="bg-primary hover:bg-primary/90 text-white font-bold tracking-wide" data-testid="button-consultation-desktop">
+          <Button asChild className="bg-[hsl(var(--accent-marketing))] hover:bg-[hsl(var(--accent-marketing))]/90 text-background font-bold tracking-wide border-none shadow-[0_0_15px_rgba(20,184,166,0.4)]" data-testid="button-consultation-desktop">
             <Link href="/contact">GET A FREE CONSULTATION</Link>
           </Button>
         </div>

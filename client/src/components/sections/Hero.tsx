@@ -24,10 +24,10 @@ export default function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="space-y-6"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[hsl(var(--accent-marketing))]/10 border border-[hsl(var(--accent-marketing))]/20 text-[hsl(var(--accent-marketing))] text-xs font-bold uppercase tracking-wider">
             <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[hsl(var(--accent-marketing))] opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-[hsl(var(--accent-marketing))]"></span>
             </span>
             Independent Valuation Experts
           </div>
@@ -44,7 +44,7 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <Button size="lg" className="h-14 px-8 text-base font-bold bg-primary hover:bg-primary/90 rounded-none md:rounded-md border border-primary/50 shadow-[0_0_20px_rgba(59,130,246,0.3)] hover:shadow-[0_0_30px_rgba(59,130,246,0.5)] transition-all" asChild>
+            <Button size="lg" className="h-14 px-8 text-base font-bold bg-[hsl(var(--accent-marketing))] hover:bg-[hsl(var(--accent-marketing))]/90 text-background rounded-none md:rounded-md border-none shadow-[0_0_20px_rgba(20,184,166,0.3)] hover:shadow-[0_0_30px_rgba(20,184,166,0.5)] transition-all" asChild>
               <Link href="/contact">
                 Start Free Evaluation <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
