@@ -10,7 +10,6 @@ import DiminishedValue from "@/pages/services/diminished-value";
 import LossOfUse from "@/pages/services/loss-of-use";
 import Bundle from "@/pages/services/bundle";
 import PrePurchase from "@/pages/services/pre-purchase";
-import PublicAdjusting from "@/pages/services/public-adjusting";
 import SampleReport from "@/pages/sample-report";
 import NotFound from "@/pages/not-found";
 

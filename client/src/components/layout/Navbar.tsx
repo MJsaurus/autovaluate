@@ -28,7 +28,6 @@ export default function Navbar() {
     { name: "LOU Reports", href: "/services/loss-of-use" },
     { name: "DV + LOU Bundle", href: "/services/bundle" },
     { name: "Pre-Purchase Report", href: "/services/pre-purchase" },
-    { name: "Public Adjusting", href: "/services/public-adjusting" },
   ];
 
   return (
