@@ -14,10 +14,10 @@ export default function DiminishedValue() {
         "Expert Data Insights"
       ]}
       howItWorks={[
-        { title: "Vehicle Assessment", desc: "We review your repair estimates, vehicle history, and condition photos." },
-        { title: "Market Data Sourcing", desc: "Our team identifies comparable 'clean' vehicles and calculates the valuation gap." },
-        { title: "Report Drafting", desc: "We compile a comprehensive report documenting the exact dollar amount of value lost." },
-        { title: "Claim Submission", desc: "You receive your final report to submit to the insurance carrier." }
+        { title: "Vehicle Assessment", desc: "We review your repair estimates, vehicle history, and condition data." },
+        { title: "Market Data Sourcing", desc: "Our team identifies comparable 'clean' vehicles and analyzes the market valuation gap." },
+        { title: "Report Drafting", desc: "We compile a comprehensive report detailing the indicated loss in market appeal." },
+        { title: "Data Implementation", desc: "You receive your final report to use as supporting evidence for your valuation needs." }
       ]}
       whatWeNeed={[
         "Final Repair Estimate/Invoice",

@@ -14,12 +14,12 @@ const steps = [
   {
     number: "03",
     title: "Report Generation",
-    description: "We produce a comprehensive, USPAP-compliant report documenting your loss with supporting evidence."
+    description: "We produce a comprehensive valuation report documenting the indicated market value with supporting evidence."
   },
   {
     number: "04",
-    title: "Claim Support",
-    description: "Receive guidance on how to present your report to the insurance company to demand fair compensation."
+    title: "Information Support",
+    description: "Receive your report containing the data needed to understand your vehicle's market standing."
   }
 ];
 
@@ -30,11 +30,11 @@ export default function HowItWorks() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-white leading-tight">
-              A Proven Process for <br />
-              <span className="text-primary">Maximum Recovery</span>
+              A Data-Driven <br />
+              <span className="text-primary">Valuation Process</span>
             </h2>
             <p className="text-muted-foreground text-lg">
-              Navigating insurance claims can be complex. We simplify the process with professional documentation that demands attention.
+              Understanding vehicle valuation can be complex. We simplify the process with professional analysis based on real market evidence.
             </p>
             
             <div className="space-y-6">
@@ -53,26 +53,53 @@ export default function HowItWorks() {
           </div>
 
           <div className="relative">
-            {/* Visual representation of a report */}
+            {/* Professional Data Visualization */}
             <div className="absolute inset-0 bg-primary/20 blur-[100px] rounded-full opacity-20" />
-            <div className="relative glass-card p-8 rounded-2xl border-white/10 shadow-2xl rotate-1 hover:rotate-0 transition-transform duration-500">
-              <div className="flex items-center justify-between mb-8 border-b border-white/5 pb-4">
-                <div className="h-4 w-32 bg-white/10 rounded" />
-                <div className="h-8 w-8 rounded-full bg-primary/20" />
+            <div className="relative glass-card p-10 rounded-2xl border-white/10 shadow-2xl flex flex-col items-center justify-center min-h-[400px]">
+              <div className="w-full flex justify-between items-center mb-12">
+                <div className="h-2 w-24 bg-primary/40 rounded-full" />
+                <div className="flex gap-2">
+                  <div className="h-2 w-2 bg-white/20 rounded-full" />
+                  <div className="h-2 w-2 bg-white/20 rounded-full" />
+                </div>
               </div>
-              <div className="space-y-4">
-                <div className="h-4 w-3/4 bg-white/5 rounded" />
-                <div className="h-4 w-full bg-white/5 rounded" />
-                <div className="h-4 w-5/6 bg-white/5 rounded" />
-                <div className="grid grid-cols-2 gap-4 mt-8">
-                  <div className="h-24 bg-white/5 rounded border border-white/5 flex flex-col justify-center items-center">
-                    <span className="text-xs text-muted-foreground uppercase mb-1">Pre-Loss Value</span>
-                    <span className="text-xl font-mono font-bold text-white">$45,200</span>
-                  </div>
-                  <div className="h-24 bg-primary/10 rounded border border-primary/20 flex flex-col justify-center items-center">
-                    <span className="text-xs text-primary uppercase mb-1">Diminished Value</span>
-                    <span className="text-xl font-mono font-bold text-primary">$6,850</span>
-                  </div>
+              
+              <div className="relative w-48 h-48 mb-8">
+                <svg viewBox="0 0 100 100" className="w-full h-full -rotate-90">
+                  <circle
+                    cx="50"
+                    cy="50"
+                    r="40"
+                    fill="transparent"
+                    stroke="currentColor"
+                    strokeWidth="8"
+                    className="text-white/5"
+                  />
+                  <circle
+                    cx="50"
+                    cy="50"
+                    r="40"
+                    fill="transparent"
+                    stroke="currentColor"
+                    strokeWidth="8"
+                    strokeDasharray="251.2"
+                    strokeDashoffset="62.8"
+                    className="text-primary"
+                  />
+                </svg>
+                <div className="absolute inset-0 flex flex-col items-center justify-center rotate-90">
+                  <span className="text-3xl font-bold text-white">75%</span>
+                  <span className="text-[10px] text-muted-foreground uppercase tracking-widest">Market Alignment</span>
+                </div>
+              </div>
+
+              <div className="w-full space-y-3">
+                <div className="h-2 w-full bg-white/5 rounded-full overflow-hidden">
+                  <div className="h-full w-4/5 bg-primary/60" />
+                </div>
+                <div className="flex justify-between text-[10px] text-muted-foreground font-mono uppercase tracking-tighter">
+                  <span>Data Precision</span>
+                  <span>Verified</span>
                 </div>
               </div>
             </div>

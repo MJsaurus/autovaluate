@@ -5,19 +5,19 @@ export default function LossOfUse() {
     <ServicePageLayout 
       title="Loss of Use Reports"
       price="$299"
-      valueProp="Compensation for the time your vehicle was in the shop. We provide the market rental data to substantiate your daily rate demand."
+      valueProp="Understanding the market rate for the time your vehicle was undergoing repairs. We provide the market rental data to support your daily rate analysis."
       whatYouGet={[
         "Market Rental Rate Evidence",
         "Comparable Vehicle Availability Data",
         "Repair Duration Verification",
-        "Daily Rate Calculation Analysis",
-        "Support Documentation"
+        "Daily Rate Analysis",
+        "Market Data Support"
       ]}
       howItWorks={[
-        { title: "Repair Timeline Review", desc: "We verify the reasonable time required for your vehicle's specific repairs." },
+        { title: "Repair Timeline Review", desc: "We review the time typically required for your vehicle's specific repairs." },
         { title: "Rental Market Research", desc: "We pull data for comparable vehicles available for rent in your specific zip code." },
-        { title: "Daily Rate Benchmarking", desc: "We establish the fair daily market rate for your vehicle class." },
-        { title: "Final Report Delivery", desc: "Receive your professional LOU demand packet." }
+        { title: "Daily Rate Analysis", desc: "We establish a fair daily market rate for your vehicle class based on current data." },
+        { title: "Final Report Delivery", desc: "Receive your professional LOU information package." }
       ]}
       whatWeNeed={[
         "Repair Facility Records (Start and End dates)",

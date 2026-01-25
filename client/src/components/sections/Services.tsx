@@ -1,36 +1,28 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Car, TrendingDown, Scale, FileText } from "lucide-react";
+import { Car, TrendingDown, FileText } from "lucide-react";
 import textureBg from "@/assets/texture-bg.png";
 
 const services = [
   {
     icon: TrendingDown,
     title: "Diminished Value Reports",
-    description: "Recover the lost market value of your vehicle after an accident. Even with perfect repairs, your car is worth less. We prove it.",
-    features: ["Market Analysis", "Repair Quality Assessment", "USPAP Compliant"],
+    description: "Understand the lost market value of your vehicle after an accident. Even with perfect repairs, accident history affects market appeal. We provide the data.",
+    features: ["Market Analysis", "Repair Data Review", "Professional Reports"],
     color: "text-primary",
   },
   {
     icon: Car,
     title: "Loss of Use Reports",
-    description: "Compensation for the time you were without your vehicle. Get paid for the daily rental rate of a comparable luxury vehicle.",
-    features: ["Daily Rate Analysis", "Duration Verification", "Comparable Rate Data"],
+    description: "Insights into the daily rental rate of a comparable vehicle for the time you were without your car.",
+    features: ["Daily Rate Analysis", "Duration Data", "Comparable Rate Data"],
     color: "text-primary",
   },
   {
     icon: FileText,
     title: "Vehicle Valuation",
-    description: "Independent market analysis for total loss settlements, pre-purchase evaluations, and fair market pricing. We provide the transparency you need to buy or settle with confidence.",
-    features: ["Total Loss & Insurance", "Pre-Purchase Analysis", "Comparable Sales Data"],
-    color: "text-primary",
-  },
-  {
-    icon: Scale,
-    title: "Public Adjusting",
-    description: "Licensed representation for first-party insurance claims. We handle the negotiation so you don't have to.",
-    features: ["First-Party Claims Only", "Negotiation Support", "Policy Review"],
-    disclaimer: "*Subject to jurisdiction & licensing",
+    description: "Independent market analysis for total loss settlements, pre-purchase evaluations, and fair market pricing. We provide the transparency you need.",
+    features: ["Total Loss Data", "Pre-Purchase Analysis", "Comparable Sales Data"],
     color: "text-primary",
   },
 ];
@@ -54,7 +46,7 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {services.map((service, index) => (
             <Card key={index} className="bg-card/50 border-white/5 backdrop-blur-sm hover:border-primary/50 transition-all duration-300 group flex flex-col h-full">
               <CardHeader>

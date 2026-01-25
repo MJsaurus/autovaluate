@@ -24,7 +24,6 @@ function Router() {
       <Route path="/services/loss-of-use" component={LossOfUse} />
       <Route path="/services/bundle" component={Bundle} />
       <Route path="/services/pre-purchase" component={PrePurchase} />
-      <Route path="/services/public-adjusting" component={PublicAdjusting} />
       <Route path="/sample-report" component={SampleReport} />
       <Route component={NotFound} />
     </Switch>
