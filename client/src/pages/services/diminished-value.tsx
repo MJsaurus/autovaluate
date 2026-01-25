@@ -5,13 +5,13 @@ export default function DiminishedValue() {
     <ServicePageLayout 
       title="Diminished Value Reports"
       price="$299"
-      valueProp="Recover the lost market value of your vehicle after an accident. We provide the professional documentation you need to prove your car's true value."
+      valueProp="Understand the lost market value of your vehicle after an accident. We provide the professional data analysis you need to document your car's true market value."
       whatYouGet={[
-        "USPAP Compliant Appraisal Report",
+        "Professional Valuation Report",
         "Comparable Sales Market Analysis",
         "Detailed Vehicle History Review",
-        "Physical Damage/Repair Quality Analysis",
-        "Expert Signature & Credentials"
+        "Physical Damage & Repair Data Analysis",
+        "Expert Data Insights"
       ]}
       howItWorks={[
         { title: "Vehicle Assessment", desc: "We review your repair estimates, vehicle history, and condition photos." },

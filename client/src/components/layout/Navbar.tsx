@@ -45,7 +45,7 @@ export default function Navbar() {
           <a className="flex items-center gap-2 group cursor-pointer" data-testid="link-home-logo">
             <ShieldCheck className="h-8 w-8 text-primary group-hover:text-primary/80 transition-colors" />
             <span className="font-heading font-bold text-xl md:text-2xl tracking-tighter text-white uppercase">
-              Auto<span className="text-primary">Signal</span>
+              Auto<span className="text-primary">Valuate</span>
             </span>
           </a>
         </Link>

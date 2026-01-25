@@ -27,7 +27,7 @@ export default function WhyChooseUs() {
               <Users size={32} />
             </div>
             <h3 className="text-xl font-heading font-bold text-white">Expert Team</h3>
-            <p className="text-sm text-muted-foreground">Licensed appraisers and former adjusters who understand the insurance claim playbook.</p>
+            <p className="text-sm text-muted-foreground">Automotive industry experts with decades of experience in valuation, repair, and claims data analysis.</p>
           </div>
 
           <div className="text-center space-y-4 p-6 rounded-lg hover:bg-white/5 transition-colors">

@@ -21,7 +21,7 @@ export default function SampleReport() {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4 bg-white/5 p-6 rounded-xl border border-white/10">
           <div>
             <h1 className="text-2xl font-heading font-bold">Sample Diminished Value Report</h1>
-            <p className="text-muted-foreground text-sm">USPAP Compliant • Assignment #ASG-2024-001</p>
+            <p className="text-muted-foreground text-sm">Professional Valuation • Assignment #ASG-2024-001</p>
           </div>
           <div className="flex gap-3">
             <Button variant="outline" className="border-white/10 hover:bg-white/5">
@@ -59,7 +59,7 @@ export default function SampleReport() {
                 
                 <div className="flex items-center gap-3 text-primary mb-6">
                   <ShieldCheck size={24} />
-                  <span className="font-bold tracking-widest uppercase text-sm">USPAP COMPLIANT REPORT</span>
+                  <span className="font-bold tracking-widest uppercase text-sm">PROFESSIONAL VALUATION REPORT</span>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-12">
@@ -128,7 +128,7 @@ export default function SampleReport() {
               </h2>
               <div className="prose prose-invert max-w-none text-muted-foreground">
                 <p>
-                  This report utilizes the <strong>Market Data Comparison Approach</strong> in accordance with USPAP Standards 7 & 8. 
+                  This report utilizes the <strong>Market Data Comparison Approach</strong>. 
                   Our analysis bypasses industry "shortcuts" like the 17c formula, instead focusing on real-world market behavior:
                 </p>
                 <div className="grid md:grid-cols-3 gap-6 my-8">
@@ -188,24 +188,23 @@ export default function SampleReport() {
             {/* 5. Certification */}
             <section id="certification" className="scroll-mt-32 space-y-6">
               <div className="p-8 rounded-2xl bg-white/5 border border-white/10 border-dashed">
-                <h2 className="text-2xl font-heading font-bold mb-6">Signed Certification (Standard 8-3)</h2>
+                <h2 className="text-2xl font-heading font-bold mb-6">Analysis Certification</h2>
                 <div className="space-y-4 text-sm text-muted-foreground italic mb-8">
-                  <p>I certify that, to the best of my knowledge and belief:</p>
+                  <p>We certify that, to the best of our knowledge and belief:</p>
                   <ul className="list-disc pl-5 space-y-2">
-                    <li>The statements of fact contained in this report are true and correct.</li>
-                    <li>The reported analyses, opinions, and conclusions are limited only by the reported assumptions and limiting conditions and are my personal, impartial, and unbiased professional analyses, opinions, and conclusions.</li>
-                    <li>I have no present or prospective interest in the property that is the subject of this report and no personal interest with respect to the parties involved.</li>
-                    <li>My compensation for completing this assignment is not contingent upon the development or reporting of a predetermined value.</li>
+                    <li>The statements of fact contained in this report are based on professional data analysis.</li>
+                    <li>The reported analyses, opinions, and conclusions are limited only by the reported assumptions and limiting conditions and are our independent professional analyses.</li>
+                    <li>We have no present or prospective interest in the property that is the subject of this report.</li>
                   </ul>
                 </div>
                 
                 <div className="flex flex-col md:flex-row justify-between items-end gap-8 pt-8 border-t border-white/10">
                   <div className="space-y-1">
                     <div className="w-64 h-12 border-b-2 border-primary mb-2 flex items-end">
-                      <span className="font-heading italic text-xl">AutoSignal Group</span>
+                      <span className="font-heading italic text-xl">AutoValuate</span>
                     </div>
-                    <p className="text-xs font-bold text-white uppercase tracking-widest">Certified Appraiser Signature</p>
-                    <p className="text-[10px] text-muted-foreground">AutoSignal Group Services LLC • License #TX-ASG-001</p>
+                    <p className="text-xs font-bold text-white uppercase tracking-widest">Authorized Signature</p>
+                    <p className="text-[10px] text-muted-foreground">AutoValuate Services LLC</p>
                   </div>
                   <div className="text-right">
                     <p className="text-xs font-bold text-white uppercase tracking-widest mb-1">Date of Valuation</p>

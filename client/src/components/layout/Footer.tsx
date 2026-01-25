@@ -8,12 +8,12 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-1 space-y-4">
             <div className="flex items-center gap-2">
               <ShieldCheck className="h-6 w-6 text-primary" />
-              <span className="font-heading font-bold text-xl text-white">
-                AUTOSIGNAL <span className="text-primary">GROUP</span>
+              <span className="font-heading font-bold text-xl text-white uppercase">
+                Auto<span className="text-primary">Valuate</span>
               </span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Premier automotive valuation and claims assistance services. We provide the data you need to recover what you're owed.
+              Premier automotive valuation and claims data services. We provide the expert analysis you need to understand your vehicle's true value.
             </p>
           </div>
 
@@ -51,14 +51,14 @@ export default function Footer() {
           <div className="text-[10px] text-muted-foreground/60 space-y-2 text-justify">
             <p className="font-bold text-muted-foreground">IMPORTANT DISCLAIMERS:</p>
             <p>
-              <strong>NOT LEGAL ADVICE:</strong> AutoSignal Group is a professional valuation and consulting firm, not a law firm. The information provided on this website and in our reports is for educational and informational purposes only and does not constitute legal advice. No attorney-client relationship is formed by using our services. If you require legal representation, please consult a licensed attorney.
+              <strong>NOT LEGAL ADVICE:</strong> AutoValuate is a professional valuation and consulting firm, not a law firm. The information provided on this website and in our reports is for educational and informational purposes only and does not constitute legal advice. No attorney-client relationship is formed by using our services. If you require legal representation, please consult a licensed attorney.
             </p>
             <p>
-              <strong>PUBLIC ADJUSTING SERVICES:</strong> Public Adjusting services involving direct negotiation of first-party insurance claims are only provided in jurisdictions where AutoSignal Group holds valid licensure (currently TX). In all other jurisdictions, or for third-party liability claims, our services are limited to appraisal, valuation reporting, and administrative documentation support to assist the vehicle owner in presenting their own claim. We do not negotiate third-party claims.
+              <strong>VALUATION SERVICES:</strong> Our services are limited to appraisal, valuation reporting, and administrative documentation support to assist vehicle owners in presenting their own claims. We do not negotiate claims or provide legal representation.
             </p>
           </div>
           <div className="text-center text-xs text-muted-foreground pt-4">
-            &copy; {new Date().getFullYear()} AutoSignal Group Services LLC. All rights reserved.
+            &copy; {new Date().getFullYear()} AutoValuate Services LLC. All rights reserved.
           </div>
         </div>
       </div>
