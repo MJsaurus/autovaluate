@@ -11,6 +11,7 @@ import LossOfUse from "@/pages/services/loss-of-use";
 import Bundle from "@/pages/services/bundle";
 import PrePurchase from "@/pages/services/pre-purchase";
 import PublicAdjusting from "@/pages/services/public-adjusting";
+import SampleReport from "@/pages/sample-report";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -24,6 +25,7 @@ function Router() {
       <Route path="/services/bundle" component={Bundle} />
       <Route path="/services/pre-purchase" component={PrePurchase} />
       <Route path="/services/public-adjusting" component={PublicAdjusting} />
+      <Route path="/sample-report" component={SampleReport} />
       <Route component={NotFound} />
     </Switch>
   );
