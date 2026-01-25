@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { Car, TrendingDown, Scale, FileText } from "lucide-react";
+import { Car, TrendingDown, FileText } from "lucide-react";
 import textureBg from "@/assets/texture-bg.png";
 
 const services = [
@@ -23,12 +23,6 @@ const services = [
     description: "Independent market analysis for total loss settlements and pre-purchase evaluations.",
     href: "/services/pre-purchase",
   },
-  {
-    icon: Scale,
-    title: "Public Adjusting",
-    description: "Licensed representation for first-party insurance claims in permitted jurisdictions.",
-    href: "/services/public-adjusting",
-  },
 ];
 
 export default function ServicesSummary() {
@@ -49,7 +43,7 @@ export default function ServicesSummary() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {services.map((service, index) => (
             <Card key={index} className="bg-card/50 border-white/5 backdrop-blur-sm hover:border-primary/50 transition-all duration-300 group flex flex-col h-full" data-testid={`card-service-summary-${service.title.toLowerCase().replace(/ /g, '-')}`}>
               <CardHeader>
