@@ -7,7 +7,7 @@ export const pricingData = [
     name: "Diminished Value Report",
     price: "$299",
     href: "/services/diminished-value",
-    features: ["USPAP Compliant Report", "Market Analysis", "Repair Quality Review"]
+    features: ["Independent Expert Market Valuation", "Comparable Market Analysis", "Repair Quality Review"]
   },
   {
     name: "Loss of Use Report",
