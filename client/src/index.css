@@ -50,39 +50,40 @@
 }
 
 :root {
-  /* Dark Mode Default - Premium Automotive Theme */
-  --background: 220 13% 10%; /* Deep dark gunmetal */
-  --foreground: 210 20% 98%; /* Off-white */
+  /* Light Mode - Confident Indigo Theme (Option G3) */
+  --background: 60 9% 98%;      /* Warm off-white, #FAFAF9 */
+  --foreground: 225 8% 9%;      /* Near-black ink, #16171A */
 
-  --card: 220 13% 13%; /* Slightly lighter than bg */
-  --card-foreground: 210 20% 98%;
+  --card: 0 0% 100%;            /* Pure white cards */
+  --card-foreground: 225 8% 9%;
 
-  --popover: 220 13% 13%;
-  --popover-foreground: 210 20% 98%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 225 8% 9%;
 
-  --primary: 210 100% 50%; /* Original Electric Blue */
-  --primary-foreground: 210 40% 98%;
+  --primary: 241 86% 58%;       /* Confident indigo, #3D3AF0 */
+  --primary-foreground: 0 0% 100%;
 
-  --secondary: 215 15% 20%; /* Dark Metallic Grey */
-  --secondary-foreground: 210 20% 98%;
+  --secondary: 60 7% 94%;       /* Light warm grey, #F1F1EF */
+  --secondary-foreground: 225 8% 9%;
 
-  --muted: 215 15% 20%;
-  --muted-foreground: 215 20% 65%;
+  --muted: 60 7% 94%;
+  --muted-foreground: 229 6% 38%; /* #5B5D66 */
 
-  --accent: 210 100% 50%; /* Electric Blue Accent */
-  --accent-foreground: 210 40% 98%;
+  --accent: 233 100% 97%;       /* Pale indigo tint for badges/backgrounds, #EEF0FF */
+  --accent-foreground: 241 86% 58%;
 
-  --destructive: 0 62.8% 30.6%;
-  --destructive-foreground: 210 20% 98%;
+  --destructive: 0 70% 45%;
+  --destructive-foreground: 0 0% 100%;
 
-  --border: 215 15% 25%;
-  --input: 215 15% 25%;
-  --ring: 210 100% 50%;
+  --border: 60 7% 92%;          /* #ECECE9 */
+  --input: 60 7% 92%;
+  --ring: 241 86% 58%;
 
-  --icon: 210 100% 50%; /* Uniform icon color: Electric Blue */
-  --accent-marketing: 180 100% 45%; /* Vivid Aqua/Teal Accent */
+  --icon: 241 86% 58%;          /* Indigo icons */
+  --accent-marketing: 241 86% 58%; /* Same indigo — one deliberate accent color */
+  --primary-light: 241 100% 71%; /* #6E6BFF — for gradient endpoints only */
 
-  --chart-1: 210 100% 50%;
+  --chart-1: 241 86% 58%;
   --chart-2: 160 60% 45%;
   --chart-3: 30 80% 55%;
   --chart-4: 280 65% 60%;
@@ -101,26 +102,34 @@
   }
 }
 
-/* Custom Utilities for Premium Feel */
+/* Custom Utilities for G3 Theme: light + confident indigo, restrained glow/gradient */
 @layer utilities {
   .glass-card {
-    background: rgba(30, 35, 45, 0.7);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(22, 23, 26, 0.06);
   }
-  
+
   .text-gradient-silver {
-    background: linear-gradient(to bottom right, #ffffff, #a1a1aa);
+    background: linear-gradient(to bottom right, #16171A, #5B5D66);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
   }
-  
+
   .text-gradient-blue {
-    background: linear-gradient(to right, #3b82f6, #60a5fa);
+    background: linear-gradient(100deg, #3D3AF0, #6E6BFF 60%, #3D3AF0);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+  }
+
+  .btn-glow-primary {
+    box-shadow: 0 10px 28px -8px rgba(61, 58, 240, 0.45);
+  }
+
+  .ambient-glow {
+    background: radial-gradient(circle, rgba(61,58,240,0.16) 0%, rgba(61,58,240,0) 70%);
   }
 }
