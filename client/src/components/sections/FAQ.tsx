@@ -7,7 +7,7 @@ import {
 
 export default function FAQ() {
   return (
-    <section id="faq" className="py-24 bg-card/20">
+    <section id="faq" className="py-20 bg-secondary">
       <div className="container px-4 md:px-6 max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground text-center mb-12">
           Frequently Asked <span className="text-primary">Questions</span>

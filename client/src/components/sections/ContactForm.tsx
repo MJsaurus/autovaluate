@@ -49,7 +49,7 @@ export default function ContactForm() {
   }
 
   return (
-    <section id="contact" className="py-24 bg-background relative overflow-hidden">
+    <section id="contact" className="py-20 bg-background relative overflow-hidden">
       {/* Abstract bg element */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-background/90 pointer-events-none z-10" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[120px] pointer-events-none" />

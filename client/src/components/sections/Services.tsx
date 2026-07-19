@@ -29,7 +29,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 bg-background relative">
+    <section id="services" className="py-20 bg-background relative">
       <div 
         className="absolute inset-0 opacity-20 mix-blend-overlay pointer-events-none"
         style={{ backgroundImage: `url(${textureBg})`, backgroundSize: 'cover' }}
