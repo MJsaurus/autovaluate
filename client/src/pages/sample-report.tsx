@@ -15,16 +15,16 @@ export default function SampleReport() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#0a0a0b] text-white pt-24 pb-16">
+    <div className="min-h-screen bg-background text-foreground pt-24 pb-16">
       <div className="container mx-auto px-4">
         {/* Report Controls */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4 bg-white/5 p-6 rounded-xl border border-white/10">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4 bg-accent/40 p-6 rounded-xl border border-border">
           <div>
             <h1 className="text-2xl font-heading font-bold">Sample Diminished Value Report</h1>
             <p className="text-muted-foreground text-sm">Professional Valuation • Assignment #ASG-2024-001</p>
           </div>
           <div className="flex gap-3">
-            <Button variant="outline" className="border-white/10 hover:bg-white/5">
+            <Button variant="outline" className="border-border hover:bg-accent">
               Download PDF
             </Button>
             <Button className="bg-primary hover:bg-primary/90">
@@ -41,7 +41,7 @@ export default function SampleReport() {
               <a
                 key={s.id}
                 href={`#${s.id}`}
-                className="block py-2 px-4 rounded-lg text-sm text-muted-foreground hover:text-white hover:bg-white/5 transition-all border-l-2 border-transparent hover:border-primary"
+                className="block py-2 px-4 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-accent transition-all border-l-2 border-transparent hover:border-primary"
               >
                 {s.title}
               </a>
@@ -52,7 +52,7 @@ export default function SampleReport() {
           <div className="lg:col-span-3 space-y-12">
             {/* 1. Header & Summary */}
             <section id="header" className="scroll-mt-32">
-              <div className="bg-gradient-to-br from-white/5 to-transparent p-8 rounded-2xl border border-white/10 relative overflow-hidden">
+              <div className="bg-gradient-to-br from-accent/40 to-transparent p-8 rounded-2xl border border-border relative overflow-hidden">
                 <div className="absolute top-0 right-0 p-8 opacity-10">
                   <ShieldCheck size={120} />
                 </div>
@@ -66,13 +66,13 @@ export default function SampleReport() {
                   <div>
                     <h2 className="text-4xl font-heading font-bold mb-4">Summary of Value</h2>
                     <div className="space-y-4">
-                      <div className="flex justify-between items-baseline py-2 border-b border-white/5">
+                      <div className="flex justify-between items-baseline py-2 border-b border-border">
                         <span className="text-muted-foreground">Pre-Accident Value</span>
                         <span className="text-xl font-bold">$42,500.00</span>
                       </div>
-                      <div className="flex justify-between items-baseline py-2 border-b border-white/5">
+                      <div className="flex justify-between items-baseline py-2 border-b border-border">
                         <span className="text-muted-foreground">Post-Repair Value</span>
-                        <span className="text-xl font-bold text-red-400">$36,200.00</span>
+                        <span className="text-xl font-bold text-destructive">$36,200.00</span>
                       </div>
                       <div className="flex justify-between items-baseline py-4">
                         <span className="text-lg font-bold">Total Inherent Diminished Value</span>
@@ -81,7 +81,7 @@ export default function SampleReport() {
                     </div>
                   </div>
                   
-                  <div className="bg-white/5 p-6 rounded-xl border border-white/5">
+                  <div className="bg-accent/40 p-6 rounded-xl border border-border">
                     <h3 className="font-bold mb-3 flex items-center gap-2">
                       <Info size={16} className="text-primary" />
                       Executive Conclusion
@@ -111,7 +111,7 @@ export default function SampleReport() {
                   { icon: AlertTriangle, label: "Impact Severity", value: "Moderate / Structural" },
                   { icon: User, label: "Client", value: "Jane Smith" },
                 ].map((item, i) => (
-                  <div key={i} className="p-4 rounded-xl bg-white/5 border border-white/5">
+                  <div key={i} className="p-4 rounded-xl bg-accent/40 border border-border">
                     <item.icon size={16} className="text-primary mb-2" />
                     <p className="text-xs text-muted-foreground uppercase tracking-widest mb-1">{item.label}</p>
                     <p className="font-bold text-sm">{item.value}</p>
@@ -126,22 +126,22 @@ export default function SampleReport() {
                 <div className="w-8 h-8 rounded bg-primary/20 flex items-center justify-center text-primary text-sm">03</div>
                 Valuation Methodology
               </h2>
-              <div className="prose prose-invert max-w-none text-muted-foreground">
+              <div className="prose max-w-none text-muted-foreground">
                 <p>
                   This report utilizes the <strong>Market Data Comparison Approach</strong>. 
                   Our analysis bypasses industry "shortcuts" like the 17c formula, instead focusing on real-world market behavior:
                 </p>
                 <div className="grid md:grid-cols-3 gap-6 my-8">
                   <div className="space-y-2">
-                    <div className="text-white font-bold text-sm">Pre-Accident Analysis</div>
+                    <div className="text-foreground font-bold text-sm">Pre-Accident Analysis</div>
                     <p className="text-xs">Analysis of non-accident vehicles in the same market to establish a baseline Fair Market Value.</p>
                   </div>
                   <div className="space-y-2">
-                    <div className="text-white font-bold text-sm">Historical Stigma Analysis</div>
+                    <div className="text-foreground font-bold text-sm">Historical Stigma Analysis</div>
                     <p className="text-xs">Applying depreciation coefficients based on damage severity, repair quality, and airbag status.</p>
                   </div>
                   <div className="space-y-2">
-                    <div className="text-white font-bold text-sm">Market Comp Verification</div>
+                    <div className="text-foreground font-bold text-sm">Market Comp Verification</div>
                     <p className="text-xs">Verifying adjusted values against actual dealer trade-in data for vehicles with similar history.</p>
                   </div>
                 </div>
@@ -154,9 +154,9 @@ export default function SampleReport() {
                 <div className="w-8 h-8 rounded bg-primary/20 flex items-center justify-center text-primary text-sm">04</div>
                 Comparable Market Data
               </h2>
-              <div className="overflow-x-auto rounded-xl border border-white/10">
+              <div className="overflow-x-auto rounded-xl border border-border">
                 <table className="w-full text-sm text-left">
-                  <thead className="bg-white/10 text-xs font-bold uppercase tracking-widest">
+                  <thead className="bg-accent/60 text-xs font-bold uppercase tracking-widest">
                     <tr>
                       <th className="px-6 py-4">Comp #</th>
                       <th className="px-6 py-4">Description</th>
@@ -165,19 +165,19 @@ export default function SampleReport() {
                       <th className="px-6 py-4">Sold Price</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-white/5">
+                  <tbody className="divide-y divide-border">
                     {[
                       { id: "01", desc: "2023 BMW X5 (No History)", miles: "11,200", loc: "Plano, TX", price: "$43,900" },
                       { id: "02", desc: "2023 BMW X5 (No History)", miles: "14,500", loc: "Dallas, TX", price: "$42,100" },
                       { id: "03", desc: "2022 BMW X5 (Prior Frame)", miles: "15,100", loc: "Houston, TX", price: "$35,400" },
                       { id: "04", desc: "2023 BMW X5 (Accident)", miles: "13,800", loc: "Fort Worth, TX", price: "$36,800" },
                     ].map((comp, i) => (
-                      <tr key={i} className="hover:bg-white/5 transition-colors">
+                      <tr key={i} className="hover:bg-accent/40 transition-colors">
                         <td className="px-6 py-4 font-mono text-primary">{comp.id}</td>
-                        <td className="px-6 py-4 font-medium text-white">{comp.desc}</td>
+                        <td className="px-6 py-4 font-medium text-foreground">{comp.desc}</td>
                         <td className="px-6 py-4 text-muted-foreground">{comp.miles}</td>
                         <td className="px-6 py-4 text-muted-foreground">{comp.loc}</td>
-                        <td className="px-6 py-4 font-bold text-white">{comp.price}</td>
+                        <td className="px-6 py-4 font-bold text-foreground">{comp.price}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -187,7 +187,7 @@ export default function SampleReport() {
 
             {/* 5. Certification */}
             <section id="certification" className="scroll-mt-32 space-y-6">
-              <div className="p-8 rounded-2xl bg-white/5 border border-white/10 border-dashed">
+              <div className="p-8 rounded-2xl bg-accent/40 border border-border border-dashed">
                 <h2 className="text-2xl font-heading font-bold mb-6">Analysis Certification</h2>
                 <div className="space-y-4 text-sm text-muted-foreground italic mb-8">
                   <p>We certify that, to the best of our knowledge and belief:</p>
@@ -198,16 +198,16 @@ export default function SampleReport() {
                   </ul>
                 </div>
                 
-                <div className="flex flex-col md:flex-row justify-between items-end gap-8 pt-8 border-t border-white/10">
+                <div className="flex flex-col md:flex-row justify-between items-end gap-8 pt-8 border-t border-border">
                   <div className="space-y-1">
                     <div className="w-64 h-12 border-b-2 border-primary mb-2 flex items-end">
                       <span className="font-heading italic text-xl">AutoValuate</span>
                     </div>
-                    <p className="text-xs font-bold text-white uppercase tracking-widest">Authorized Signature</p>
+                    <p className="text-xs font-bold text-foreground uppercase tracking-widest">Authorized Signature</p>
                     <p className="text-[10px] text-muted-foreground">AutoValuate Services LLC</p>
                   </div>
                   <div className="text-right">
-                    <p className="text-xs font-bold text-white uppercase tracking-widest mb-1">Date of Valuation</p>
+                    <p className="text-xs font-bold text-foreground uppercase tracking-widest mb-1">Date of Valuation</p>
                     <p className="text-xl font-bold">{new Date().toLocaleDateString()}</p>
                   </div>
                 </div>

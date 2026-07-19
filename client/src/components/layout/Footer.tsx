@@ -2,13 +2,13 @@ import { ShieldCheck } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-background border-t border-white/5 pt-16 pb-8 flex justify-center">
+    <footer className="bg-background border-t border-border pt-16 pb-8 flex justify-center">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-1 space-y-4">
             <div className="flex items-center gap-2">
               <ShieldCheck className="h-6 w-6 text-primary" />
-              <span className="font-heading font-bold text-xl text-white uppercase">
+              <span className="font-heading font-bold text-xl text-foreground uppercase">
                 Auto<span className="text-primary">Valuate</span>
               </span>
             </div>
@@ -18,7 +18,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-bold text-white mb-4">Services</h4>
+            <h4 className="font-bold text-foreground mb-4">Services</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><a href="#" className="hover:text-primary transition-colors">Diminished Value Reports</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Loss of Use Reports</a></li>
@@ -28,7 +28,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-bold text-white mb-4">Company</h4>
+            <h4 className="font-bold text-foreground mb-4">Company</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><a href="#" className="hover:text-primary transition-colors">About Us</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Process</a></li>
@@ -38,7 +38,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-bold text-white mb-4">Legal</h4>
+            <h4 className="font-bold text-foreground mb-4">Legal</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><a href="#" className="hover:text-primary transition-colors">Privacy Policy</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Terms of Service</a></li>
@@ -47,7 +47,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/5 pt-8 space-y-4">
+        <div className="border-t border-border pt-8 space-y-4">
           <div className="text-[10px] text-muted-foreground/60 space-y-2 text-justify">
             <p className="font-bold text-muted-foreground">IMPORTANT DISCLAIMERS:</p>
             <p>

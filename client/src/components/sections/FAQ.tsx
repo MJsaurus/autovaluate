@@ -9,13 +9,13 @@ export default function FAQ() {
   return (
     <section id="faq" className="py-24 bg-card/20">
       <div className="container px-4 md:px-6 max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-heading font-bold text-white text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground text-center mb-12">
           Frequently Asked <span className="text-primary">Questions</span>
         </h2>
 
         <Accordion type="single" collapsible className="w-full space-y-4">
-          <AccordionItem value="item-1" className="border-white/10">
-            <AccordionTrigger className="text-lg font-medium text-white hover:text-primary hover:no-underline">
+          <AccordionItem value="item-1" className="border-border">
+            <AccordionTrigger className="text-lg font-medium text-foreground hover:text-primary hover:no-underline">
               What is Diminished Value (DV)?
             </AccordionTrigger>
             <AccordionContent className="text-muted-foreground leading-relaxed">
@@ -23,8 +23,8 @@ export default function FAQ() {
             </AccordionContent>
           </AccordionItem>
 
-          <AccordionItem value="item-2" className="border-white/10">
-            <AccordionTrigger className="text-lg font-medium text-white hover:text-primary hover:no-underline">
+          <AccordionItem value="item-2" className="border-border">
+            <AccordionTrigger className="text-lg font-medium text-foreground hover:text-primary hover:no-underline">
               What is Loss of Use (LOU)?
             </AccordionTrigger>
             <AccordionContent className="text-muted-foreground leading-relaxed">
@@ -32,8 +32,8 @@ export default function FAQ() {
             </AccordionContent>
           </AccordionItem>
 
-          <AccordionItem value="item-3" className="border-white/10">
-            <AccordionTrigger className="text-lg font-medium text-white hover:text-primary hover:no-underline">
+          <AccordionItem value="item-3" className="border-border">
+            <AccordionTrigger className="text-lg font-medium text-foreground hover:text-primary hover:no-underline">
               Do you negotiate with the insurance company for me?
             </AccordionTrigger>
             <AccordionContent className="text-muted-foreground leading-relaxed">
@@ -42,17 +42,17 @@ export default function FAQ() {
             </AccordionContent>
           </AccordionItem>
 
-          <AccordionItem value="item-4" className="border-white/10">
-            <AccordionTrigger className="text-lg font-medium text-white hover:text-primary hover:no-underline">
+          <AccordionItem value="item-4" className="border-border">
+            <AccordionTrigger className="text-lg font-medium text-foreground hover:text-primary hover:no-underline">
               Is this legal advice?
             </AccordionTrigger>
             <AccordionContent className="text-muted-foreground leading-relaxed">
-              <strong className="text-white">No.</strong> We are automotive valuation experts, not attorneys. Our reports and consultations are technical opinions on value and automotive damage. We do not provide legal advice, and our services should not be construed as such. If you have legal questions, you should consult with a qualified attorney.
+              <strong className="text-foreground">No.</strong> We are automotive valuation experts, not attorneys. Our reports and consultations are technical opinions on value and automotive damage. We do not provide legal advice, and our services should not be construed as such. If you have legal questions, you should consult with a qualified attorney.
             </AccordionContent>
           </AccordionItem>
 
-          <AccordionItem value="item-5" className="border-white/10">
-            <AccordionTrigger className="text-lg font-medium text-white hover:text-primary hover:no-underline">
+          <AccordionItem value="item-5" className="border-border">
+            <AccordionTrigger className="text-lg font-medium text-foreground hover:text-primary hover:no-underline">
               How much does a report cost?
             </AccordionTrigger>
             <AccordionContent className="text-muted-foreground leading-relaxed">

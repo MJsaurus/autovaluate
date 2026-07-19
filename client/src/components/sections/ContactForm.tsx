@@ -57,7 +57,7 @@ export default function ContactForm() {
       <div className="container mx-auto relative z-20 px-4 md:px-6">
         <div className="grid lg:grid-cols-2 gap-16">
           <div className="space-y-8">
-            <h2 className="text-3xl md:text-5xl font-heading font-bold text-white">
+            <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground">
               Get Your Free <br />
               <span className="text-primary">Case Evaluation</span>
             </h2>
@@ -65,19 +65,19 @@ export default function ContactForm() {
               Stop leaving money on the table. Fill out the form below to speak with a valuation expert. We'll review your case details and let you know exactly what your claim is worth.
             </p>
             
-            <div className="space-y-6 pt-8 border-t border-white/10">
+            <div className="space-y-6 pt-8 border-t border-border">
               <div>
-                <h4 className="font-heading font-bold text-white mb-2">Office Hours</h4>
+                <h4 className="font-heading font-bold text-foreground mb-2">Office Hours</h4>
                 <p className="text-muted-foreground">Mon-Fri: 9:00 AM - 6:00 PM CST</p>
               </div>
               <div>
-                <h4 className="font-heading font-bold text-white mb-2">Email Us</h4>
+                <h4 className="font-heading font-bold text-foreground mb-2">Email Us</h4>
                 <p className="text-primary">claims@autovaluate.demo</p>
               </div>
             </div>
           </div>
 
-          <div className="glass-card p-8 rounded-2xl border border-white/10">
+          <div className="glass-card p-8 rounded-2xl border border-border">
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
@@ -88,7 +88,7 @@ export default function ContactForm() {
                       <FormItem>
                         <FormLabel>Full Name</FormLabel>
                         <FormControl>
-                          <Input placeholder="John Doe" {...field} className="bg-background/50 border-white/10 focus-visible:ring-primary" />
+                          <Input placeholder="John Doe" {...field} className="bg-background/50 border-input focus-visible:ring-primary" />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -101,7 +101,7 @@ export default function ContactForm() {
                       <FormItem>
                         <FormLabel>Phone</FormLabel>
                         <FormControl>
-                          <Input placeholder="(555) 123-4567" {...field} className="bg-background/50 border-white/10 focus-visible:ring-primary" />
+                          <Input placeholder="(555) 123-4567" {...field} className="bg-background/50 border-input focus-visible:ring-primary" />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -116,7 +116,7 @@ export default function ContactForm() {
                     <FormItem>
                       <FormLabel>Email</FormLabel>
                       <FormControl>
-                        <Input placeholder="john@example.com" {...field} className="bg-background/50 border-white/10 focus-visible:ring-primary" />
+                        <Input placeholder="john@example.com" {...field} className="bg-background/50 border-input focus-visible:ring-primary" />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -132,7 +132,7 @@ export default function ContactForm() {
                         <FormLabel>Service Requested</FormLabel>
                         <Select onValueChange={field.onChange} defaultValue={field.value}>
                           <FormControl>
-                            <SelectTrigger className="bg-background/50 border-white/10 focus:ring-primary">
+                            <SelectTrigger className="bg-background/50 border-input focus:ring-primary">
                               <SelectValue placeholder="Select a service" />
                             </SelectTrigger>
                           </FormControl>
@@ -154,7 +154,7 @@ export default function ContactForm() {
                       <FormItem>
                         <FormLabel>Vehicle (Year/Make/Model)</FormLabel>
                         <FormControl>
-                          <Input placeholder="e.g., 2022 BMW X5" {...field} className="bg-background/50 border-white/10 focus-visible:ring-primary" />
+                          <Input placeholder="e.g., 2022 BMW X5" {...field} className="bg-background/50 border-input focus-visible:ring-primary" />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -171,7 +171,7 @@ export default function ContactForm() {
                       <FormControl>
                         <Textarea 
                           placeholder="Briefly describe the accident or your specific needs..." 
-                          className="bg-background/50 border-white/10 min-h-[100px] focus-visible:ring-primary"
+                          className="bg-background/50 border-input min-h-[100px] focus-visible:ring-primary"
                           {...field} 
                         />
                       </FormControl>
@@ -180,7 +180,7 @@ export default function ContactForm() {
                   )}
                 />
 
-                <Button type="submit" size="lg" className="w-full font-bold text-base bg-primary hover:bg-primary/90 text-white">
+                <Button type="submit" size="lg" className="w-full font-bold text-base bg-primary hover:bg-primary/90 text-primary-foreground">
                   Request Free Consultation
                 </Button>
               </form>

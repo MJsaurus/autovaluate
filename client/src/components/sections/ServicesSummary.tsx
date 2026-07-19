@@ -35,7 +35,7 @@ export default function ServicesSummary() {
       
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <h2 className="text-3xl md:text-5xl font-heading font-bold text-white">
+          <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground">
             Expert <span className="text-primary">Automotive Services</span>
           </h2>
           <p className="text-muted-foreground text-lg">
@@ -45,12 +45,12 @@ export default function ServicesSummary() {
 
         <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {services.map((service, index) => (
-            <Card key={index} className="bg-card/50 border-white/5 backdrop-blur-sm hover:border-primary/50 transition-all duration-300 group flex flex-col h-full" data-testid={`card-service-summary-${service.title.toLowerCase().replace(/ /g, '-')}`}>
+            <Card key={index} className="bg-card/50 border-border backdrop-blur-sm hover:border-primary/50 transition-all duration-300 group flex flex-col h-full" data-testid={`card-service-summary-${service.title.toLowerCase().replace(/ /g, '-')}`}>
               <CardHeader>
-                <div className="w-12 h-12 rounded-lg bg-background/50 flex items-center justify-center mb-4 border border-white/10 group-hover:scale-110 transition-transform text-primary">
+                <div className="w-12 h-12 rounded-lg bg-background/50 flex items-center justify-center mb-4 border border-border group-hover:scale-110 transition-transform text-primary">
                   <service.icon size={24} />
                 </div>
-                <CardTitle className="text-xl font-heading text-white">{service.title}</CardTitle>
+                <CardTitle className="text-xl font-heading text-foreground">{service.title}</CardTitle>
               </CardHeader>
               <CardContent className="flex-grow">
                 <p className="text-sm text-muted-foreground leading-relaxed">

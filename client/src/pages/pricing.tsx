@@ -12,7 +12,7 @@ export default function PricingPage() {
       <main className="pt-32 pb-24">
         <div className="container px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h1 className="text-4xl md:text-6xl font-heading font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-6xl font-heading font-bold text-foreground mb-6">
               Full <span className="text-primary">Pricing</span>
             </h1>
             <p className="text-muted-foreground text-xl">
@@ -20,21 +20,21 @@ export default function PricingPage() {
             </p>
           </div>
 
-          <div className="glass-card rounded-2xl border border-white/10 overflow-hidden mb-16">
+          <div className="glass-card rounded-2xl border border-border overflow-hidden mb-16">
             <Table>
-              <TableHeader className="bg-white/5">
-                <TableRow className="border-white/10">
-                  <TableHead className="text-white font-bold py-6 px-8">Service</TableHead>
-                  <TableHead className="text-white font-bold py-6 px-8 text-right">Price</TableHead>
-                  <TableHead className="text-white font-bold py-6 px-8 text-center">Action</TableHead>
+              <TableHeader className="bg-accent/40">
+                <TableRow className="border-border">
+                  <TableHead className="text-foreground font-bold py-6 px-8">Service</TableHead>
+                  <TableHead className="text-foreground font-bold py-6 px-8 text-right">Price</TableHead>
+                  <TableHead className="text-foreground font-bold py-6 px-8 text-center">Action</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
                 {pricingData.map((item) => (
-                  <TableRow key={item.name} className="border-white/10 hover:bg-white/5 transition-colors">
+                  <TableRow key={item.name} className="border-border hover:bg-accent/40 transition-colors">
                     <TableCell className="py-8 px-8 align-top">
                       <div className="space-y-2">
-                        <p className="text-xl font-bold text-white">{item.name}</p>
+                        <p className="text-xl font-bold text-foreground">{item.name}</p>
                         <p className="text-sm text-muted-foreground">{item.features.join(", ")}</p>
                       </div>
                     </TableCell>
@@ -48,10 +48,10 @@ export default function PricingPage() {
                     </TableCell>
                   </TableRow>
                 ))}
-                <TableRow className="border-white/10 hover:bg-white/5 transition-colors">
+                <TableRow className="border-border hover:bg-accent/40 transition-colors">
                   <TableCell className="py-8 px-8 align-top">
                     <div className="space-y-2">
-                      <p className="text-xl font-bold text-white">Public Adjuster Fee (Texas)</p>
+                      <p className="text-xl font-bold text-foreground">Public Adjuster Fee (Texas)</p>
                       <p className="text-sm text-muted-foreground">First-party claims only. Subject to licensing. Maximum allowed by law.</p>
                     </div>
                   </TableCell>
@@ -70,14 +70,14 @@ export default function PricingPage() {
           </div>
 
           <div className="max-w-3xl mx-auto space-y-8">
-            <h2 className="text-3xl font-heading font-bold text-white text-center">Pricing FAQ</h2>
+            <h2 className="text-3xl font-heading font-bold text-foreground text-center">Pricing FAQ</h2>
             <div className="grid gap-6">
-              <div className="glass-card p-6 rounded-xl border border-white/5">
-                <h3 className="text-lg font-bold text-white mb-2">Are there any hidden fees?</h3>
+              <div className="glass-card p-6 rounded-xl border border-border">
+                <h3 className="text-lg font-bold text-foreground mb-2">Are there any hidden fees?</h3>
                 <p className="text-muted-foreground">No. Our report fees are flat-rate. If additional on-site inspections are required, they will be quoted separately before any work begins.</p>
               </div>
-              <div className="glass-card p-6 rounded-xl border border-white/5">
-                <h3 className="text-lg font-bold text-white mb-2">When do I pay?</h3>
+              <div className="glass-card p-6 rounded-xl border border-border">
+                <h3 className="text-lg font-bold text-foreground mb-2">When do I pay?</h3>
                 <p className="text-muted-foreground">Fees for reports are due upon ordering. Public adjusting fees are contingency-based and collected upon successful recovery.</p>
               </div>
             </div>

@@ -37,7 +37,7 @@ export default function Services() {
       
       <div className="container px-4 md:px-6 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <h2 className="text-3xl md:text-5xl font-heading font-bold text-white">
+          <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground">
             Professional <span className="text-primary">Valuation Services</span>
           </h2>
           <p className="text-muted-foreground text-lg">
@@ -48,12 +48,12 @@ export default function Services() {
 
         <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {services.map((service, index) => (
-            <Card key={index} className="bg-card/50 border-white/5 backdrop-blur-sm hover:border-primary/50 transition-all duration-300 group flex flex-col h-full">
+            <Card key={index} className="bg-card/50 border-border backdrop-blur-sm hover:border-primary/50 transition-all duration-300 group flex flex-col h-full">
               <CardHeader>
-                <div className={`w-12 h-12 rounded-lg bg-background/50 flex items-center justify-center mb-4 border border-white/10 group-hover:scale-110 transition-transform ${service.color}`}>
+                <div className={`w-12 h-12 rounded-lg bg-background/50 flex items-center justify-center mb-4 border border-border group-hover:scale-110 transition-transform ${service.color}`}>
                   <service.icon size={24} />
                 </div>
-                <CardTitle className="text-xl font-heading text-white">{service.title}</CardTitle>
+                <CardTitle className="text-xl font-heading text-foreground">{service.title}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4 flex-grow">
                 <p className="text-sm text-muted-foreground leading-relaxed">

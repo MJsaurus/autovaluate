@@ -31,10 +31,10 @@ export const pricingData = [
 
 export default function PricingSection() {
   return (
-    <section className="py-24 bg-card/30 border-y border-white/5">
+    <section className="py-24 bg-card/30 border-y border-border">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-5xl font-heading font-bold text-white mb-6">
+          <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground mb-6">
             Transparent <span className="text-primary">Pricing</span>
           </h2>
           <p className="text-muted-foreground text-lg">
@@ -44,10 +44,10 @@ export default function PricingSection() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {pricingData.map((plan) => (
-            <div key={plan.name} className="glass-card p-8 rounded-2xl border border-white/10 flex flex-col h-full hover:border-primary/50 transition-colors" data-testid={`card-pricing-${plan.name.toLowerCase().replace(/ /g, '-')}`}>
-              <h3 className="text-xl font-heading font-bold text-white mb-2">{plan.name}</h3>
+            <div key={plan.name} className="glass-card p-8 rounded-2xl border border-border flex flex-col h-full hover:border-primary/50 transition-colors" data-testid={`card-pricing-${plan.name.toLowerCase().replace(/ /g, '-')}`}>
+              <h3 className="text-xl font-heading font-bold text-foreground mb-2">{plan.name}</h3>
               <div className="mb-6">
-                <span className="text-4xl font-bold text-white">{plan.price}</span>
+                <span className="text-4xl font-bold text-foreground">{plan.price}</span>
               </div>
               <ul className="space-y-3 mb-8 flex-grow">
                 {plan.features.map((f) => (
