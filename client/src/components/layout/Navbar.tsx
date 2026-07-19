@@ -43,7 +43,7 @@ export default function Navbar() {
         <Link href="/">
           <a className="flex items-center gap-2 group cursor-pointer" data-testid="link-home-logo">
             <ShieldCheck className="h-8 w-8 text-primary group-hover:text-primary/80 transition-colors" />
-            <span className="font-heading font-bold text-xl md:text-2xl tracking-tighter text-white uppercase">
+            <span className="font-heading font-bold text-xl md:text-2xl tracking-tighter text-foreground uppercase">
               Auto<span className="text-primary">Valuate</span>
             </span>
           </a>
@@ -80,7 +80,7 @@ export default function Navbar() {
             <a className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors uppercase tracking-wide" data-testid="link-contact">Contact</a>
           </Link>
           
-          <Button asChild className="bg-[hsl(var(--accent-marketing))] hover:bg-[hsl(var(--accent-marketing))]/90 text-background font-bold tracking-wide border-none shadow-[0_0_15px_rgba(20,184,166,0.4)]" data-testid="button-consultation-desktop">
+          <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold tracking-wide border-none btn-glow-primary" data-testid="button-consultation-desktop">
             <Link href="/contact">GET A FREE CONSULTATION</Link>
           </Button>
         </div>
@@ -114,7 +114,7 @@ export default function Navbar() {
           <Link href="/contact">
             <a className="text-lg font-medium text-foreground hover:text-primary" onClick={() => setMobileMenuOpen(false)}>Contact</a>
           </Link>
-          <Button asChild className="w-full bg-primary text-white font-bold">
+          <Button asChild className="w-full bg-primary text-primary-foreground font-bold">
             <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>GET A FREE CONSULTATION</Link>
           </Button>
         </div>
