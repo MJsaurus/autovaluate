@@ -3,23 +3,18 @@ import { CheckCircle2 } from "lucide-react";
 const steps = [
   {
     number: "01",
-    title: "Free Consultation",
-    description: "Submit your vehicle details and accident information. We'll review your case to determine if you have a viable claim."
+    title: "Tell Us What Happened",
+    description: "Submit your vehicle and accident details, or your insurer's total loss offer. Takes about a minute."
   },
   {
     number: "02",
-    title: "Data Analysis",
-    description: "Our experts analyze market data, repair estimates, and comparable vehicle sales to calculate precise values."
+    title: "We Analyze the Market",
+    description: "Our team compares real market data and comparable sales to calculate your documented loss — no obligation."
   },
   {
     number: "03",
-    title: "Report Generation",
-    description: "We produce a comprehensive valuation report documenting the indicated market value with supporting evidence."
-  },
-  {
-    number: "04",
-    title: "Information Support",
-    description: "Receive your report containing the data needed to understand your vehicle's market standing."
+    title: "Get Your Signed Report",
+    description: "Receive a comprehensive report, reviewed and signed by a licensed adjuster, ready to submit."
   }
 ];
 

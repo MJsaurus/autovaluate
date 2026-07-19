@@ -16,7 +16,7 @@ export default function PricingPage() {
               Full <span className="text-primary">Pricing</span>
             </h1>
             <p className="text-muted-foreground text-xl">
-              Professional valuation services with clear, upfront pricing.
+              Professional valuation services with clear, upfront pricing — reviewed and signed by a licensed adjuster, with no charge if we find no meaningful lost value.
             </p>
           </div>
 

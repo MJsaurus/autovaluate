@@ -25,14 +25,32 @@ export default function FAQ() {
 
           <AccordionItem value="item-2" className="border-border">
             <AccordionTrigger className="text-lg font-medium text-foreground hover:text-primary hover:no-underline">
-              What is Loss of Use (LOU)?
+              Do I qualify for a diminished value or total loss claim?
             </AccordionTrigger>
             <AccordionContent className="text-muted-foreground leading-relaxed">
-              Loss of Use is compensation for the time you are without your vehicle while it is being repaired or replaced. This is often calculated based on the daily rental rate of a comparable vehicle, regardless of whether you actually rented a car or not (in many jurisdictions).
+              If your vehicle was in an accident and has a documented repair, you likely qualify for a DV review. If your insurer declared your vehicle a total loss, you qualify for a replacement-cost review regardless of fault. We review your situation for free before you pay anything.
             </AccordionContent>
           </AccordionItem>
 
           <AccordionItem value="item-3" className="border-border">
+            <AccordionTrigger className="text-lg font-medium text-foreground hover:text-primary hover:no-underline">
+              Can I claim diminished value if I was at fault?
+            </AccordionTrigger>
+            <AccordionContent className="text-muted-foreground leading-relaxed">
+              Generally, no — diminished value claims are typically filed as third-party claims against the at-fault driver's insurance. If you were at fault, you likely won't have a viable DV claim against your own insurer. A total loss valuation review, however, is available regardless of fault.
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value="item-4" className="border-border">
+            <AccordionTrigger className="text-lg font-medium text-foreground hover:text-primary hover:no-underline">
+              Will the insurance company actually pay it?
+            </AccordionTrigger>
+            <AccordionContent className="text-muted-foreground leading-relaxed">
+              Insurers are not required to proactively offer diminished value, and total loss payouts are frequently lower than true replacement cost. A documented, data-driven report significantly strengthens your negotiating position, though payment is never guaranteed.
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value="item-5" className="border-border">
             <AccordionTrigger className="text-lg font-medium text-foreground hover:text-primary hover:no-underline">
               Do you negotiate with the insurance company for me?
             </AccordionTrigger>
@@ -42,21 +60,30 @@ export default function FAQ() {
             </AccordionContent>
           </AccordionItem>
 
-          <AccordionItem value="item-4" className="border-border">
+          <AccordionItem value="item-6" className="border-border">
+            <AccordionTrigger className="text-lg font-medium text-foreground hover:text-primary hover:no-underline">
+              How is the value calculated?
+            </AccordionTrigger>
+            <AccordionContent className="text-muted-foreground leading-relaxed">
+              We analyze comparable vehicle sales and current market listings for your exact year, make, model, and condition, then compare that data against the accident history or insurer's offer to calculate the documented loss.
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value="item-7" className="border-border">
+            <AccordionTrigger className="text-lg font-medium text-foreground hover:text-primary hover:no-underline">
+              What if there's little or no lost value?
+            </AccordionTrigger>
+            <AccordionContent className="text-muted-foreground leading-relaxed">
+              If our analysis doesn't support a meaningful loss, we'll tell you upfront — you won't be charged for a report that has nothing worth submitting.
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value="item-8" className="border-border">
             <AccordionTrigger className="text-lg font-medium text-foreground hover:text-primary hover:no-underline">
               Is this legal advice?
             </AccordionTrigger>
             <AccordionContent className="text-muted-foreground leading-relaxed">
               <strong className="text-foreground">No.</strong> We are automotive valuation experts, not attorneys. Our reports and consultations are technical opinions on value and automotive damage. We do not provide legal advice, and our services should not be construed as such. If you have legal questions, you should consult with a qualified attorney.
-            </AccordionContent>
-          </AccordionItem>
-
-          <AccordionItem value="item-5" className="border-border">
-            <AccordionTrigger className="text-lg font-medium text-foreground hover:text-primary hover:no-underline">
-              How much does a report cost?
-            </AccordionTrigger>
-            <AccordionContent className="text-muted-foreground leading-relaxed">
-              Our preliminary consultation is free. If we determine you have a viable claim, our comprehensive report fees vary based on the complexity of the vehicle and the claim type. Contact us for a specific quote tailored to your situation.
             </AccordionContent>
           </AccordionItem>
         </Accordion>

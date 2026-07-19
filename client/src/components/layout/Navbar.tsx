@@ -24,10 +24,8 @@ export default function Navbar() {
   }, []);
 
   const serviceLinks = [
-    { name: "DV Reports", href: "/services/diminished-value" },
-    { name: "LOU Reports", href: "/services/loss-of-use" },
-    { name: "DV + LOU Bundle", href: "/services/bundle" },
-    { name: "Pre-Purchase Report", href: "/services/pre-purchase" },
+    { name: "Diminished Value Reports", href: "/services/diminished-value" },
+    { name: "Total Loss Reports", href: "/services/total-loss" },
   ];
 
   return (
@@ -54,7 +52,10 @@ export default function Navbar() {
           <Link href="/">
             <a className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors uppercase tracking-wide" data-testid="link-home">Home</a>
           </Link>
-          
+          <Link href="/#process">
+            <a className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors uppercase tracking-wide" data-testid="link-how-it-works">How It Works</a>
+          </Link>
+
           <DropdownMenu>
             <DropdownMenuTrigger className="flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-primary transition-colors uppercase tracking-wide outline-none" data-testid="button-services-dropdown">
               Services <ChevronDown className="h-4 w-4" />
@@ -99,6 +100,9 @@ export default function Navbar() {
         <div className="md:hidden absolute top-full left-0 w-full bg-background/95 backdrop-blur-xl border-b border-border/40 p-6 flex flex-col gap-6 animate-in slide-in-from-top-5 max-h-[90vh] overflow-y-auto">
           <Link href="/">
             <a className="text-lg font-medium text-foreground hover:text-primary" onClick={() => setMobileMenuOpen(false)}>Home</a>
+          </Link>
+          <Link href="/#process">
+            <a className="text-lg font-medium text-foreground hover:text-primary" onClick={() => setMobileMenuOpen(false)}>How It Works</a>
           </Link>
           <div className="space-y-4">
             <p className="text-xs font-bold text-muted-foreground uppercase tracking-widest">Services</p>

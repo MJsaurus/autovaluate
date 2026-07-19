@@ -21,7 +21,6 @@ export default function Footer() {
             <h4 className="font-bold text-foreground mb-4">Services</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><a href="#" className="hover:text-primary transition-colors">Diminished Value Reports</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Loss of Use Reports</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Total Loss Valuation</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Public Adjusting</a></li>
             </ul>

@@ -116,12 +116,9 @@ export function ServicePageLayout({
                   </div>
                 </div>
                 
-                <div className="glass-card p-6 rounded-xl border border-border space-y-4">
-                  <h4 className="font-bold text-foreground">Need a Bundle?</h4>
-                  <p className="text-sm text-muted-foreground">Save $99 when you combine DV and LOU reports.</p>
-                  <Button asChild variant="link" className="p-0 text-primary h-auto">
-                    <Link href="/services/bundle">View DV + LOU Bundle &rarr;</Link>
-                  </Button>
+                <div className="glass-card p-6 rounded-xl border border-border space-y-2">
+                  <h4 className="font-bold text-foreground">No Meaningful Loss? No Charge.</h4>
+                  <p className="text-sm text-muted-foreground">If our analysis doesn't support a meaningful loss, you won't be charged for the report.</p>
                 </div>
               </div>
             </div>

@@ -49,7 +49,7 @@ export default function ContactForm() {
   }
 
   return (
-    <section id="contact" className="py-20 bg-background relative overflow-hidden">
+    <section id="estimate" className="py-20 bg-background relative overflow-hidden">
       {/* Abstract bg element */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-background/90 pointer-events-none z-10" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[120px] pointer-events-none" />
@@ -58,13 +58,16 @@ export default function ContactForm() {
         <div className="grid lg:grid-cols-2 gap-16">
           <div className="space-y-8">
             <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground">
-              Get Your Free <br />
-              <span className="text-primary">Case Evaluation</span>
+              Find out what your <br />
+              <span className="text-primary">accident may have cost you</span>
             </h2>
             <p className="text-muted-foreground text-lg">
-              Stop leaving money on the table. Fill out the form below to speak with a valuation expert. We'll review your case details and let you know exactly what your claim is worth.
+              Stop leaving money on the table. Fill out the form below to speak with a valuation expert. We'll review your case details and let you know exactly what your claim is worth — no obligation.
             </p>
-            
+            <p className="text-sm text-muted-foreground">
+              Time limits to file a diminished value claim vary by state, so don't wait to find out what you may be owed.
+            </p>
+
             <div className="space-y-6 pt-8 border-t border-border">
               <div>
                 <h4 className="font-heading font-bold text-foreground mb-2">Office Hours</h4>
@@ -138,8 +141,7 @@ export default function ContactForm() {
                           </FormControl>
                           <SelectContent>
                             <SelectItem value="dv">Diminished Value Report</SelectItem>
-                            <SelectItem value="lou">Loss of Use Report</SelectItem>
-                            <SelectItem value="valuation">Total Loss Valuation</SelectItem>
+                            <SelectItem value="total-loss">Total Loss Valuation</SelectItem>
                             <SelectItem value="consulting">General Consultation</SelectItem>
                           </SelectContent>
                         </Select>
@@ -181,8 +183,11 @@ export default function ContactForm() {
                 />
 
                 <Button type="submit" size="lg" className="w-full font-bold text-base bg-primary hover:bg-primary/90 text-primary-foreground">
-                  Request Free Consultation
+                  Get My Free Estimate
                 </Button>
+                <p className="text-xs text-muted-foreground text-center">
+                  Reviewed and signed by a licensed adjuster &middot; no charge if we find no meaningful lost value
+                </p>
               </form>
             </Form>
           </div>

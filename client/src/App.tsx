@@ -7,9 +7,7 @@ import Home from "@/pages/home";
 import Pricing from "@/pages/pricing";
 import Contact from "@/pages/contact";
 import DiminishedValue from "@/pages/services/diminished-value";
-import LossOfUse from "@/pages/services/loss-of-use";
-import Bundle from "@/pages/services/bundle";
-import PrePurchase from "@/pages/services/pre-purchase";
+import TotalLoss from "@/pages/services/total-loss";
 import SampleReport from "@/pages/sample-report";
 import NotFound from "@/pages/not-found";
 
@@ -20,9 +18,7 @@ function Router() {
       <Route path="/pricing" component={Pricing} />
       <Route path="/contact" component={Contact} />
       <Route path="/services/diminished-value" component={DiminishedValue} />
-      <Route path="/services/loss-of-use" component={LossOfUse} />
-      <Route path="/services/bundle" component={Bundle} />
-      <Route path="/services/pre-purchase" component={PrePurchase} />
+      <Route path="/services/total-loss" component={TotalLoss} />
       <Route path="/sample-report" component={SampleReport} />
       <Route component={NotFound} />
     </Switch>

@@ -1,6 +1,8 @@
 import Navbar from "@/components/layout/Navbar";
 import Hero from "@/components/sections/Hero";
 import ServicesSummary from "@/components/sections/ServicesSummary";
+import DVEducation from "@/components/sections/DVEducation";
+import TotalLossEducation from "@/components/sections/TotalLossEducation";
 import PricingSection from "@/components/sections/PricingSection";
 import HowItWorks from "@/components/sections/HowItWorks";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
@@ -15,6 +17,8 @@ export default function Home() {
       <main>
         <Hero />
         <ServicesSummary />
+        <DVEducation />
+        <TotalLossEducation />
         <PricingSection />
         <HowItWorks />
         <WhyChooseUs />

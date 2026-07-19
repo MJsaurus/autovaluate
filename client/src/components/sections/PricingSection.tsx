@@ -7,25 +7,13 @@ export const pricingData = [
     name: "Diminished Value Report",
     price: "$299",
     href: "/services/diminished-value",
-    features: ["Independent Expert Market Valuation", "Comparable Market Analysis", "Repair Quality Review"]
+    features: ["Independent Market Valuation", "Comparable Sales Analysis", "Reviewed & Signed by a Licensed Adjuster"]
   },
   {
-    name: "Loss of Use Report",
+    name: "Total Loss Report",
     price: "$299",
-    href: "/services/loss-of-use",
-    features: ["Daily Rate Evidence", "Comparable Data", "Documentation Support"]
-  },
-  {
-    name: "DV + LOU Bundle",
-    price: "$499",
-    href: "/services/bundle",
-    features: ["Combined Market Evidence", "Priority Handling", "Discounted Bundle Rate"]
-  },
-  {
-    name: "Pre-Purchase Report",
-    price: "$249",
-    href: "/services/pre-purchase",
-    features: ["Independent Pricing Review", "Comparable Sales Data", "Transparency Analysis"]
+    href: "/services/total-loss",
+    features: ["Replacement-Cost Market Analysis", "Comparable Listings Evidence", "Reviewed & Signed by a Licensed Adjuster"]
   }
 ];
 
@@ -39,11 +27,11 @@ export default function PricingSection() {
             Transparent <span className="text-primary">Pricing</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            Professional reports with flat-rate pricing. No surprises, just data-driven results.
+            One flat fee per report. No charge if we find no meaningful lost value.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
           {pricingData.map((plan) => (
             <div key={plan.name} className="glass-card p-8 rounded-2xl border border-border shadow-sm flex flex-col h-full hover:border-primary/50 hover:shadow-md transition-all" data-testid={`card-pricing-${plan.name.toLowerCase().replace(/ /g, '-')}`}>
               <h3 className="text-xl font-heading font-bold text-foreground mb-2">{plan.name}</h3>

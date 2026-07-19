@@ -1,27 +1,21 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { Car, TrendingDown, FileText } from "lucide-react";
+import { TrendingDown, FileText } from "lucide-react";
 import textureBg from "@/assets/texture-bg.png";
 
 const services = [
   {
     icon: TrendingDown,
     title: "Diminished Value Reports",
-    description: "Recover the lost market value of your vehicle after an accident. Even with perfect repairs, your car is worth less.",
+    description: "Recover the lost market value of your vehicle after an accident. Even with a flawless repair, your car is worth less.",
     href: "/services/diminished-value",
   },
   {
-    icon: Car,
-    title: "Loss of Use Reports",
-    description: "Compensation for the time you were without your vehicle. Comparable rate evidence for your claim.",
-    href: "/services/loss-of-use",
-  },
-  {
     icon: FileText,
-    title: "Vehicle Valuation",
-    description: "Independent market analysis for total loss settlements and pre-purchase evaluations.",
-    href: "/services/pre-purchase",
+    title: "Total Loss Valuation",
+    description: "Independent replacement-cost analysis when your insurer's total loss offer falls short of true market value.",
+    href: "/services/total-loss",
   },
 ];
 
@@ -44,7 +38,7 @@ export default function ServicesSummary() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
           {services.map((service, index) => (
             <Card key={index} className="bg-card/50 border-border backdrop-blur-sm hover:border-primary/50 transition-all duration-300 group flex flex-col h-full" data-testid={`card-service-summary-${service.title.toLowerCase().replace(/ /g, '-')}`}>
               <CardHeader>

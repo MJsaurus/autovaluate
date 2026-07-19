@@ -11,7 +11,7 @@ export default function DiminishedValue() {
         "Comparable Sales Market Analysis",
         "Detailed Vehicle History Review",
         "Physical Damage & Repair Data Analysis",
-        "Expert Data Insights"
+        "Reviewed & Signed by a Licensed Adjuster"
       ]}
       howItWorks={[
         { title: "Vehicle Assessment", desc: "We review your repair estimates, vehicle history, and condition data." },

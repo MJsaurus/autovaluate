@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, BarChart3, Shield, ClipboardCheck } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 
@@ -21,65 +21,58 @@ export default function Hero() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
             </span>
-            Independent Valuation Experts
+            Diminished Value & Total Loss Experts
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-extrabold leading-tight text-foreground">
-            Prove what your <span className="text-gradient-blue">vehicle</span> is actually worth.
+            Even after a flawless repair, <span className="text-gradient-blue">your car is worth less.</span>
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-lg leading-relaxed">
-            Independent, data-driven analysis for automotive claims and purchase decisions. Professional documentation backed by industry expertise.
+            That's Diminished Value — and if your car was totaled, your insurer's payout may fall short of true replacement cost too. We provide the independent report that proves exactly how much.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <Button size="lg" className="h-14 px-8 text-base font-bold bg-primary hover:bg-primary/90 text-primary-foreground rounded-md border-none btn-glow-primary transition-all" asChild>
-              <Link href="/contact">
-                Start Free Evaluation <ArrowRight className="ml-2 h-5 w-5" />
+              <Link href="/#estimate">
+                Get My Free Estimate <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
             <Button size="lg" variant="outline" className="h-14 px-8 text-base font-bold border-border text-foreground hover:bg-secondary rounded-md" asChild>
-              <Link href="/services/diminished-value">
-                Explore Services
+              <Link href="/#process">
+                See How It Works
               </Link>
             </Button>
           </div>
+
+          <p className="text-sm text-muted-foreground pt-2">
+            Reviewed and signed by a licensed adjuster &middot; no obligation
+          </p>
         </motion.div>
 
-        {/* Hero Credibility Cards */}
-        <motion.div 
+        {/* Sample Valuation Proof Card */}
+        <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="hidden md:flex flex-col gap-4 justify-center pl-10"
+          className="flex justify-center md:justify-end"
         >
-          <div className="bg-card p-5 rounded-xl border border-border flex items-center gap-4 hover:border-primary/40 transition-colors group shadow-sm">
-            <div className="w-12 h-12 rounded-lg bg-accent flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
-              <BarChart3 size={24} />
+          <div className="w-full max-w-sm bg-card p-6 rounded-2xl border border-border shadow-sm space-y-5">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Sample Valuation</span>
+              <span className="text-xs font-mono text-muted-foreground">VIN &bull;&bull;&bull;&bull;4821</span>
             </div>
-            <div>
-              <h3 className="text-lg font-bold text-foreground">Independent Market Analysis</h3>
-              <p className="text-xs text-muted-foreground">Data-driven valuations based on real-world vehicle markets.</p>
+            <div className="flex items-center justify-between py-3 border-b border-border">
+              <span className="text-sm text-muted-foreground">Clean market value</span>
+              <span className="font-bold text-foreground">$52,000</span>
             </div>
-          </div>
-
-          <div className="bg-card p-5 rounded-xl border border-border flex items-center gap-4 hover:border-primary/40 transition-colors group shadow-sm">
-            <div className="w-12 h-12 rounded-lg bg-accent flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
-              <Shield size={24} />
+            <div className="flex items-center justify-between py-3 border-b border-border">
+              <span className="text-sm text-muted-foreground">Diminished value</span>
+              <span className="font-bold text-destructive">&minus;$12,000</span>
             </div>
-            <div>
-              <h3 className="text-lg font-bold text-foreground">Claims & Purchase Valuation</h3>
-              <p className="text-xs text-muted-foreground">Reports for insurance claims, total loss, and purchase decisions.</p>
-            </div>
-          </div>
-
-          <div className="bg-card p-5 rounded-xl border border-border flex items-center gap-4 hover:border-primary/40 transition-colors group shadow-sm">
-            <div className="w-12 h-12 rounded-lg bg-accent flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
-              <ClipboardCheck size={24} />
-            </div>
-            <div>
-              <h3 className="text-lg font-bold text-foreground">Professional Documentation</h3>
-              <p className="text-xs text-muted-foreground">Clear, defensible reports designed to support informed decisions.</p>
+            <div className="flex items-center justify-between pt-1">
+              <span className="text-sm font-bold text-foreground">Loss in value</span>
+              <span className="text-2xl font-bold text-primary">&minus;23%</span>
             </div>
           </div>
         </motion.div>
